@@ -1,0 +1,33 @@
+{
+  "name": "online-store",
+  "version": "1.0.0",
+  "description": "Необходимо создать интернет-магазин произвольной тематики(например: техника, автозапчасти, спорт товары и т.д.), где товары будут иметь следующий функционал: фильтрация, сортировка, поиск, добавление в корзину. Подобную функциональность имеют каталоги интернет-магазинов.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatsveiDubaleka/online-store.git"
+  },
+  "keywords": [
+    "online-store",
+    "webpack",
+    "scss",
+    "eslint",
+    "ts",
+    "typescript"
+  ],
+  "author": "MatsveiDubaleka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatsveiDubaleka/online-store/issues"
+  },
+  "homepage": "https://github.com/MatsveiDubaleka/online-store#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
