@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable no-undef */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
@@ -20,7 +19,34 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
-    rules: [],
+    rules: [
+      {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'ts-loader',
+          options: {
+            // disable type checker - we will use it in fork plugin
+            transpileOnly: true,
+          },
+        },
+      },
+      {
+        test: /\.(scss|css)$/,
+        use: [
+          process.env.NODE_ENV !== 'production'
+            ? 'style-loader'
+            : MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
+      },
+    ],
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
@@ -43,53 +69,7 @@ module.exports = {
     new ESLintPlugin({
       extensions: ['.tsx', '.ts', '.js'],
       exclude: 'node_modules',
+      context: 'src',
     }),
   ],
 };
-
-{
-  [
-    {
-      test: /\.tsx?$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'ts-loader',
-        options: {
-          // disable type checker - we will use it in fork plugin
-          transpileOnly: true,
-        },
-      },
-    },
-  ];
-}
-
-{
-  [
-    {
-      test: /\.tsx?$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'ts-loader',
-        options: {
-          // disable type checker - we will use it in fork plugin
-          transpileOnly: true,
-        },
-      },
-    },
-    {
-      test: /\.(scss|css)$/,
-      use: [
-        process.env.NODE_ENV !== 'production'
-          ? 'style-loader'
-          : MiniCssExtractPlugin.loader,
-        'css-loader',
-        {
-          loader: 'sass-loader',
-          options: {
-            sourceMap: true,
-          },
-        },
-      ],
-    },
-  ];
-}
