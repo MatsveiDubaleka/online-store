@@ -102,6 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
-/public/sum.js
-/tests/sum.test.js
-/.vscode
+
+public/sum.js
+tests/sum.test.js
+.vscode
+tests
+public
