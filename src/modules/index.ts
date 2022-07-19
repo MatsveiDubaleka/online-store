@@ -1,2 +1,3 @@
 import '../assets/styles/styles.scss';
-import './data/data';
+import './generation/generation.ts';
+import './basket/basket';
