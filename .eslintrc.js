@@ -11,7 +11,7 @@ module.exports = {
     },
   },
   rules: {
-    '@typescript-eslint/no-explicit-any': 'on',
+    '@typescript-eslint/no-explicit-any': 'error',
   },
   settings: {
     react: {
