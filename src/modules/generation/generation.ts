@@ -5,7 +5,11 @@ const imageContainer = document.querySelector(
   '.image-container'
 ) as HTMLElement;
 
-data.forEach((toy: IData) => {
+data.forEach((data: IData) => {
+  generationCard(data);
+});
+
+export function generationCard(toy: IData): void {
   const imageItem = document.createElement('div');
   imageItem.className = 'image-item';
   imageContainer.appendChild(imageItem);
@@ -57,4 +61,4 @@ data.forEach((toy: IData) => {
     basketState.innerText = 'Товар не в корзине';
   }
   imageItem.appendChild(basketState);
-});
+}
