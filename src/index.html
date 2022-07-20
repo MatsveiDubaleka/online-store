@@ -30,21 +30,40 @@
       <div class="wrapper">
         <div class="store-choice">
           <form action="" class="form">
+            <h2>Параметры</h2>
             <div class="search">
               <input
                 type="search"
                 name="search"
-                placeholder="Search Image"
+                placeholder="Название игрушки"
                 id="search-input"
               />
             </div>
             <div class="sorting">
-              <input type="radio" name="sort-eldest" id="sort-eldest" />
-              <label for="1">Eldest</label>
-              <input type="radio" name="sort-newest" id="sort-newest" />
-              <label for="1">Newest</label>
+              <div class="sorting-year">
+                <input
+                  type="radio"
+                  name="sort"
+                  id="sort-eldest"
+                  value="eldest"
+                />
+                <label for="sort-eldest">Старые</label>
+                <input
+                  type="radio"
+                  name="sort"
+                  id="sort-newest"
+                  value="newest"
+                />
+                <label for="sort-newest">Новые</label>
+              </div>
+              <div class="sorting-name">
+                <input type="radio" name="sort" id="sort-first" />
+                <label for="sort-first">По первой букве</label>
+                <input type="radio" name="sort" id="sort-last" />
+                <label for="sort-last">По последней букве</label>
+              </div>
             </div>
-            <div class="filter">Lorem ipsum dolor sit amet.</div>
+            <div class="filter">Filter</div>
             <div class="btns">
               <button type="submit">OK</button>
               <button type="reset">Reset</button>
