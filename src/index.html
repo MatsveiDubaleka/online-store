@@ -41,26 +41,34 @@
             </div>
             <div class="sorting">
               <div class="sorting-year">
-                <input
-                  type="radio"
-                  name="sort"
-                  id="sort-eldest"
-                  value="eldest"
-                />
-                <label for="sort-eldest">Старые</label>
-                <input
-                  type="radio"
-                  name="sort"
-                  id="sort-newest"
-                  value="newest"
-                />
-                <label for="sort-newest">Новые</label>
+                <div class="sorting-year__eldest">
+                  <input
+                    type="radio"
+                    name="sort"
+                    id="sort-eldest"
+                    value="eldest"
+                  />
+                  <label for="sort-eldest">Старые</label>
+                </div>
+                <div class="sorting-year__newest">
+                  <input
+                    type="radio"
+                    name="sort"
+                    id="sort-newest"
+                    value="newest"
+                  />
+                  <label for="sort-newest">Новые</label>
+                </div>
               </div>
               <div class="sorting-name">
-                <input type="radio" name="sort" id="sort-first" />
-                <label for="sort-first">По первой букве</label>
-                <input type="radio" name="sort" id="sort-last" />
-                <label for="sort-last">По последней букве</label>
+                <div class="sorting-name__first">
+                  <input type="radio" name="sort" id="sort-first" />
+                  <label for="sort-first">По первой букве</label>
+                </div>
+                <div class="sroting-name__last">
+                  <input type="radio" name="sort" id="sort-last" />
+                  <label for="sort-last">По последней букве</label>
+                </div>
               </div>
             </div>
             <div class="filter">Filter</div>
