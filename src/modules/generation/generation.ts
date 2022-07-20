@@ -19,25 +19,25 @@ data.forEach((toy: IData) => {
   toyName.innerText = `${toy.name}`;
   imageItem.appendChild(toyName);
 
-  const toyYear = document.createElement('p');
-  toyYear.className = 'toy-year';
-  toyYear.innerText = `Год выпуска: ${toy.year} г.`;
-  imageItem.appendChild(toyYear);
-
-  const toyShape = document.createElement('p');
-  toyShape.className = 'toy-shape';
-  toyShape.innerText = `Форма: ${toy.shape}`;
-  imageItem.appendChild(toyShape);
-
   const toyCount = document.createElement('p');
   toyCount.className = 'toy-count';
   toyCount.innerText = `Осталось: ${toy.count} шт.`;
   imageItem.appendChild(toyCount);
 
+  const toyYear = document.createElement('p');
+  toyYear.className = 'toy-year';
+  toyYear.innerText = `Год выпуска: ${toy.year} г.`;
+  imageItem.appendChild(toyYear);
+
   const toyColor = document.createElement('p');
   toyColor.className = 'toy-color';
   toyColor.innerText = `Цвет: ${toy.color}`;
   imageItem.appendChild(toyColor);
+
+  const toyShape = document.createElement('p');
+  toyShape.className = 'toy-shape';
+  toyShape.innerText = `Форма: ${toy.shape}`;
+  imageItem.appendChild(toyShape);
 
   const toySize = document.createElement('p');
   toySize.className = 'toy-size';
