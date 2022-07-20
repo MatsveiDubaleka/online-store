@@ -1,5 +1,5 @@
 .main {
-  padding-top: 5%;
+  padding: 7.5% 0;
   position: relative;
   margin-left: 12vw;
 }
@@ -42,6 +42,22 @@
   text-align: center;
 }
 
+.image-item:hover {
+  border-color: azure;
+  transition: 1s ease-in;
+  background-color: rgb(187, 70, 70);
+}
+
+.image-item:hover > p {
+  transition: 1s ease-in;
+  color: azure;
+}
+
+.image-item:hover > button {
+  border-color: azure;
+  color: azure;
+}
+
 .image-item p:last-child {
   font-size: 16px;
   font-weight: 200;
@@ -73,13 +89,17 @@ img {
   justify-content: space-between;
 }
 
-.btn-success {
-  background-color: green;
+.cart-success {
+  transition: 0.5s ease-in-out;
+  border: 1px solid #000;
+  background-color: cadetblue;
+  color: #fff;
 }
 
 button {
   padding: 10px 20px;
   background-color: transparent;
   border-radius: 50px;
-  border: 1px solid burlywood;
+  border: 1px solid rgb(187, 70, 70);
+  cursor: pointer;
 }
