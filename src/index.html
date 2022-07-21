@@ -17,7 +17,6 @@
           <audio
             src="./assets/audio/George Michael — Last Christmas.mp3"
             controls
-            autoplay
           ></audio>
         </div>
         <div class="basket">
@@ -73,10 +72,36 @@
                 </div>
               </div>
             </div>
-            <div class="filter">Filter</div>
-            <div class="btns">
-              <button type="submit">OK</button>
-              <button type="reset">Reset</button>
+            <div class="filter">
+              <div class="filter-year">
+                <div class="slider-year"></div>
+              </div>
+              <div class="filter-count">
+                <div class="slider-count"></div>
+              </div>
+              <div class="filter-color">
+                <div class="filter-color__green"></div>
+                <div class="filter-color__yellow"></div>
+                <div class="filter-color__red"></div>
+                <div class="filter-color__white"></div>
+                <div class="filter-color__blue"></div>
+              </div>
+              <div class="filter-forms">
+                <select name="" id="">
+                  <option value="фигурка">Фигурка</option>
+                  <option value="шар">Шар</option>
+                  <option value="шишка">Шишка</option>
+                  <option value="колокольчк">Колокольчк</option>
+                  <option value="снежинка">Снежинка</option>
+                </select>
+              </div>
+              <div class="filter-popular">
+                <label for="popular">Популярный</label>
+                <input type="checkbox" name="popular" id="popular" />
+              </div>
+              <div class="reset-btn">
+                <button type="reset">Сбросить</button>
+              </div>
             </div>
           </form>
         </div>
