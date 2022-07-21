@@ -15,7 +15,7 @@ export function generationCard(toy: IData): void {
   imageContainer.appendChild(imageItem);
 
   const toyImage = document.createElement('img');
-  toyImage.src = `../assets/images/${toy.num}.png`;
+  toyImage.src = `./assets/images/${toy.num}.png`;
   imageItem.appendChild(toyImage);
 
   const toyName = document.createElement('p');
