@@ -112,13 +112,20 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 30px;
 }
 
 .sorting-year,
 .sorting-name {
+  padding-left: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sorting-year {
+  gap: 20px;
 }
