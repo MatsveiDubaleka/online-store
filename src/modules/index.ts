@@ -1,8 +1,8 @@
-import './warn/warn';
+import 'nouislider/dist/nouislider.css';
 import '../assets/styles/styles.scss';
+import './warn/warn';
 import './generation/generation';
 import './basket/basket';
 import './sort/sort';
-import 'nouislider/dist/nouislider.css';
 import './search/search';
 import './filter/filter';
