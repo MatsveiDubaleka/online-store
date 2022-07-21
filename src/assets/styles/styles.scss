@@ -43,7 +43,7 @@ body {
   position: fixed;
   bottom: 2%;
   right: 2%;
-  display: none;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -56,11 +56,6 @@ body {
   p {
     color: azure;
   }
-}
-
-.active-warning {
-  display: flex;
-  transition: 1s ease-in-out;
 }
 
 @import url('./header.scss');
