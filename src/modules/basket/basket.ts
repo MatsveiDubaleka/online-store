@@ -1,3 +1,5 @@
+import { showWarn } from '../warn/warn';
+
 // Adding to Basket Items
 
 const btnsAddBasket = document.querySelectorAll('.btn-basket');
@@ -11,7 +13,7 @@ btnsAddBasket.forEach((btn) => {
     ) as HTMLElement;
     if (btn.innerHTML === 'Добавить в корзину') {
       if (basketItems >= 20) {
-        basketWarning();
+        showWarn('Корзина переполнена');
         return;
       }
       btn.innerHTML = 'Удалить из корзины';
@@ -30,11 +32,3 @@ btnsAddBasket.forEach((btn) => {
     }
   });
 });
-
-function basketWarning() {
-  const modalWarn = document.querySelector('.modal-warning') as HTMLElement;
-  modalWarn.classList.add('active-warning');
-  setTimeout(() => {
-    modalWarn.classList.remove('active-warning');
-  }, 5000);
-}
