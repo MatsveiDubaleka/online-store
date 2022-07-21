@@ -5,4 +5,4 @@ import './basket/basket';
 import './sort/sort';
 import 'nouislider/dist/nouislider.css';
 import './search/search';
-import './filter/fiilter';
+import './filter/filter';
